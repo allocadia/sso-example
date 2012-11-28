@@ -51,6 +51,23 @@
 			<version>1.6.6</version>
         </dependency>
 
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+
     </dependencies>
 
+	<distributionManagement>
+        <repository>
+            <id>thirdparty</id>
+			<url>http://localhost:8081/nexus/content/repositories/thirdparty/</url>
+        </repository>
+        <snapshotRepository>
+            <id>thirdparty</id>
+			<url>http://localhost:8081/nexus/content/repositories/thirdparty/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
