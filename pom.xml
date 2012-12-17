@@ -63,11 +63,11 @@
 	<distributionManagement>
         <repository>
             <id>thirdparty</id>
-			<url>http://localhost:8081/nexus/content/repositories/thirdparty/</url>
+			<url>http://54.245.234.188:8081/nexus/content/repositories/thirdparty/</url>
         </repository>
         <snapshotRepository>
             <id>thirdparty</id>
-			<url>http://localhost:8081/nexus/content/repositories/thirdparty/</url>
+			<url>http://54.245.234.188:8081/nexus/content/repositories/thirdparty/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
