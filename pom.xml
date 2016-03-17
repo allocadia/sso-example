@@ -4,16 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-<!--
+
     <parent>
-        <groupId>com.gooddata</groupId>
-        <artifactId>uberpom</artifactId>
-        <version>2.2.0</version>
+        <groupId>com.allocadia</groupId>
+        <artifactId>allocadia-parent</artifactId>
+        <version>66.0-SNAPSHOT</version>
+        <relativePath/>
     </parent>
--->
+
     <groupId>com.gooddata.commons</groupId>
     <artifactId>sso-example</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <dependencies>
         <!--Bouncycastle-->
@@ -32,42 +33,33 @@
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
-			<version>2.4</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-			<version>2.4</version>
         </dependency>
         <!--Logging-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-			<version>1.6.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-			<version>1.6.6</version>
         </dependency>
 
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.10</version>
-			<scope>test</scope>
-		</dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
-	<distributionManagement>
+    <distributionManagement>
         <repository>
             <id>thirdparty</id>
-			<url>http://54.245.234.188:8081/nexus/content/repositories/thirdparty/</url>
+            <url>http://ec2-54-245-234-188.us-west-2.compute.amazonaws.com:8081/nexus/content/repositories/thirdparty/</url>
         </repository>
         <snapshotRepository>
             <id>thirdparty</id>
-			<url>http://54.245.234.188:8081/nexus/content/repositories/thirdparty/</url>
+            <url>http://ec2-54-245-234-188.us-west-2.compute.amazonaws.com:8081/nexus/content/repositories/thirdparty/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
