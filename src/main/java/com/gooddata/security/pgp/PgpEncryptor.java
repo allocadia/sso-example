@@ -132,7 +132,7 @@ import org.slf4j.LoggerFactory;
  * </pre>
  * </p>
  */
-public class PgpEncryptor {
+public final class PgpEncryptor {
 
     private static final Logger logger = LoggerFactory.getLogger(PgpEncryptor.class);
 
@@ -167,7 +167,7 @@ public class PgpEncryptor {
 
 
         logger.debug("Initialization of PgpEncryptor with encryption key={} and signing key={} status=finish duration={} ms.",
-                new Object[]{ encryptionKeyId, signingKeyId, (System.currentTimeMillis() - initializationStartTime)});
+                new Object[]{encryptionKeyId, signingKeyId, (System.currentTimeMillis() - initializationStartTime)});
     }
 
 
